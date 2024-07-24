@@ -32,3 +32,36 @@
 .product section a {
   margin-top: 2rem;
 }
+
+/* TODO: have to work on this */
+@media screen and (max-width: 960px){
+  .product section {
+    width: clamp(50rem, 80%, 90rem);
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    align-items: center;
+  }
+  
+}
+
+@media screen and (max-width: 786px){
+  .product section {
+    width: clamp(40rem, 80%, 90rem);
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    align-items: center;
+  }
+}
+
+/* @media screen and (max-width: 450px){
+  .product section {
+    width: clamp(20rem, 80%, 90rem);
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    align-items: center;
+  }
+  
+} */
