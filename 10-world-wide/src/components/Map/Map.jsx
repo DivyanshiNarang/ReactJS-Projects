@@ -1,5 +1,5 @@
 import { useNavigate, useSearchParams } from 'react-router-dom';
-import styles from '../Map/Map.module.css';
+import styles from './Map.module.css';
 
 const Map = () => {
   const navigate = useNavigate();
@@ -13,7 +13,7 @@ const Map = () => {
     }}>
       <h1>Postion: {lat}, {lng}</h1>
       <button onClick={() => {
-        setSearchParams({lat:23, lng: 50});
+        setSearchParams({ lat: 23, lng: 50 });
       }}>CLick</button>
     </div>
   )

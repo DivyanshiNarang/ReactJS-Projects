@@ -1,7 +1,7 @@
 import { Outlet } from 'react-router-dom';
 import AppNav from '../AppNav/AppNav';
 import Logo from '../Logo/Logo';
-import styles from '../Sidebar/Sidebar.module.css';
+import styles from './Sidebar.module.css';
 
 const Sidebar = () => {
   return (
@@ -10,11 +10,11 @@ const Sidebar = () => {
       <AppNav />
 
       <Outlet />
-      
+
       {/* make footer component */}
       <footer className={styles.footer}>
         <p className={styles.copyright}>
-            &copy; Copyright {new Date().getFullYear()} by WorldWide Inc.
+          &copy; Copyright {new Date().getFullYear()} by WorldWide Inc.
         </p>
       </footer>
     </div>
